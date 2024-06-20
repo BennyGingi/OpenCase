@@ -1,7 +1,6 @@
 // bg-blue-950 border-blue-950
 // bg-zinc-900 border-zinc-900
 // bg-rose-950 border-rose-950
-// bg-blue-950 border-blue-950
 // bg-yellow-600 border-yellow-600
 // bg-purple-950 border-purple-950
 // bg-orange-600 border-orange-600
@@ -42,7 +41,6 @@ export const COLORS = [
   { label: 'Black', value: 'black', tw: 'zinc-900' },
   { label: 'Blue', value: 'blue', tw: 'blue-950' },
   { label: 'Rose', value: 'rose', tw: 'rose-950' },
-  { label: 'blue', value: 'blue', tw: 'blue-950' },
   { label: 'Yellow', value: 'yellow', tw: 'yellow-600' },
   { label: 'Purple', value: 'purple', tw: 'purple-950' },
   { label: 'Orange', value: 'orange', tw: 'orange-600' },

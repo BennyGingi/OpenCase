@@ -85,7 +85,7 @@ export default function Home() {
                   </div>
 
                   <p>
-                    <span className='font-semibold'>1.250</span> happy customers
+                    <span className='font-semibold'>1,250</span> happy customers
                   </p>
                 </div>
               </div>

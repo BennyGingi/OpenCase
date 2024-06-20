@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "DATABASE_URL": "@database_url"
+      },
+      "commands": {
+        "prebuild": "yarn prisma generate"
+      }
+    }
+  }
+  
