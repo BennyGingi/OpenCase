@@ -2,7 +2,7 @@
   "name": "bennygingi",
   "version": "0.1.0",
   "private": true,
- "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
@@ -22,6 +22,7 @@
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "@react-email/components": "^0.0.19",
     "@tanstack/react-query": "^5.45.1",
     "@uploadthing/react": "^6.6.0",
     "class-variance-authority": "^0.7.0",
@@ -30,6 +31,7 @@
     "express": "^4.19.2",
     "framer-motion": "^11.2.11",
     "lucide-react": "^0.394.0",
+    "micro": "^10.0.1",
     "next": "14.2.4",
     "prisma": "^5.15.1",
     "react": "^18.3.1",
