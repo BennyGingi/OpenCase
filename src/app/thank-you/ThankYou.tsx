@@ -1,22 +1,22 @@
-"use client";
+'use client'
 
-import { useQuery } from '@tanstack/react-query';
-import { getPaymentStatus } from './actions';
-import { useSearchParams } from 'next/navigation';
-import { Loader2 } from 'lucide-react';
-import PhonePreview from '@/components/PhonePreview';
-import { formatPrice } from '@/lib/utils';
+import { useQuery } from '@tanstack/react-query'
+import { getPaymentStatus } from './actions'
+import { useSearchParams } from 'next/navigation'
+import { Loader2 } from 'lucide-react'
+import PhonePreview from '@/components/PhonePreview'
+import { formatPrice } from '@/lib/utils'
 
 const ThankYou = () => {
-  const searchParams = useSearchParams();
-  const orderId = searchParams.get('orderId') || '';
+  const searchParams = useSearchParams()
+  const orderId = searchParams.get('orderId') || ''
 
   const { data } = useQuery({
     queryKey: ['get-payment-status'],
     queryFn: async () => await getPaymentStatus({ orderId }),
     retry: true,
     retryDelay: 500,
-  });
+  })
 
   if (data === undefined) {
     return (
@@ -27,7 +27,7 @@ const ThankYou = () => {
           <p>This won't take long.</p>
         </div>
       </div>
-    );
+    )
   }
 
   if (data === false) {
@@ -39,11 +39,11 @@ const ThankYou = () => {
           <p>This might take a moment.</p>
         </div>
       </div>
-    );
+    )
   }
 
-  const { configuration, billingAddress, shippingAddress, amount } = data;
-  const { color } = configuration;
+  const { configuration, billingAddress, shippingAddress, amount } = data
+  const { color } = configuration
 
   return (
     <div className='bg-white'>
@@ -69,7 +69,7 @@ const ThankYou = () => {
               You made a great choice!
             </h4>
             <p className='mt-2 text-sm text-zinc-600'>
-              We at BennyGolan believe that a phone case doesn't only need to
+              We at CaseCobra believe that a phone case doesn't only need to
               look good, but also last you for the years to come. We offer a
               5-year print guarantee: If you case isn't of the highest quality,
               we'll replace it for free.
@@ -143,7 +143,7 @@ const ThankYou = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ThankYou;
+export default ThankYou
